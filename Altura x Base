@@ -1,0 +1,12 @@
+from unittest import result
+
+
+dev1 = input("digite a base do retangulo:")
+dev1 = float(dev1)
+dev2 = input("digite a altura do retangulo:")
+dev2 = float(dev2)
+result = (dev1*dev2)
+print(result)
+
+
+#Cálculo que Define o Comprimento de um triângulo, Multiplicando a Base x Altura
