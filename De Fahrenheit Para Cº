@@ -1,0 +1,6 @@
+dev1 = float(input("Escreva o Numero em Grau Fahrenheit (°C): "))
+result = (dev1 - 32)/1.8
+print(result)
+
+
+#Esta é uma função em que passará de Graus Fahrenheit Para Grau Celsius o a temperatura que você colocará na tela
