@@ -1,0 +1,119 @@
+class Medico:
+    def __init__(self, crm, nome, idade, salario):
+        self._crm = crm
+        self._nome = nome
+        self._idade = idade
+        self._salario = salario
+
+    def aposentadoria(self):
+        if (self._idade > 55):
+            return self._salario * 0.8
+        else:
+            return 0
+
+# -------------------------------
+# Classe Auxiliar
+# -------------------------------
+class Auxiliar(Medico):
+    def __init__(self, crm, nome, idade, salario):
+        super().__init__(crm, nome, idade, salario)
+
+    def aposentadoria(self):
+        if (self._idade > 60):
+            return self._salario * 0.8
+        else:
+            return 0
+
+    
+# -------------------------------
+# Classe Cirurgiao
+# -------------------------------
+class Cirurgiao(Medico):
+    def __init__(self, crm, nome, idade, salario):
+        super().__init__(crm, nome, idade, salario)
+
+    def aposentadoria(self):
+        if (self._idade > 50):
+            return (self._salario * 0.8)+2000
+        else:
+            return 0# ------------------------------------
+# Este arquivo contém todas as classes
+# referentes a uma medicos
+# ------------------------------------
+# -------------------------------
+# Classe Medico
+# -------------------------------
+class Medico:
+    def __init__(self, crm, nome, idade, salario):
+        self._crm = crm
+        self._nome = nome
+        self._idade = idade
+        self._salario = salario
+
+    def aposentadoria(self):
+        if (self._idade > 55):
+            return self._salario * 0.8
+        else:
+            return 0
+
+# -------------------------------
+# Classe Auxiliar
+# -------------------------------
+class Auxiliar(Medico):
+    def __init__(self, crm, nome, idade, salario):
+        super().__init__(crm, nome, idade, salario)
+
+    def aposentadoria(self):
+        if (self._idade > 60):
+            return self._salario * 0.8
+        else:
+            return 0
+
+    
+# -------------------------------
+# Classe Cirurgiao
+# -------------------------------
+class Cirurgiao(Medico):
+    def __init__(self, crm, nome, idade, salario):
+        super().__init__(crm, nome, idade, salario)
+
+    def aposentadoria(self):
+        if (self._idade > 50):
+            return (self._salario * 0.8)+2000
+        else:
+            return 0
+            
+            
+            
+            
+            #Está é uma Aplicação em que estamos a definir o sistema de médicos
+            
+            
+            
+            
+            
+            
+            
+            
+            #Depois disso, criamos uma outra aplicação e importaremos todas aquelas funções para esse novo arquivo. E é neste arquivo que criamos as aplicações, que funcionarão de acordo  com o que definimos anteriormente.
+            
+            
+            
+from medico import Medico
+from medico import Auxiliar
+from medico import Cirurgiao
+
+
+med1 = Medico(111,"Paulo",57,10000)
+med2 = Medico(222,"Marcia",35,10000)
+aux1 = Auxiliar(333,"Ana",62,10000)
+aux2 = Auxiliar(444,"Pedro",44,10000)
+cir1 = Cirurgiao(555,"Lucas",57,10000)
+cir2 = Cirurgiao(555,"Katia",28,10000)
+
+print("Médico", med1._nome, med1.aposentadoria())
+print("Médico", med2._nome, med2.aposentadoria())
+print("Auxiliar", aux1._nome, aux1.aposentadoria())
+print("Auxiliar", aux2._nome, aux2.aposentadoria())
+print("Cirurgião", cir1._nome, cir1.aposentadoria())
+print("Cirurgião", cir2._nome, cir2.aposentadoria())
