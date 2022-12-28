@@ -1,0 +1,13 @@
+sala1 = int(input('a sala 1 tem quantos alunos: ' ))
+
+sala3 = int(input('a sala 2 tem quantos alunos: ' ))
+
+sala2 = int(input('a sala 3 tem quantos alunos:' ))
+sala4 = int(input('a sala 4 tem quantos alunos:' ))
+sala5 = int(input('a sala 5 tem quantos alunos:' ))
+sala6 = int(input('a sala 6 tem quantos alunos:' ))
+
+
+print('a escola tem', sala1+sala2+ sala3+ sala4 +sala5 + sala6)
+
+#Está é uma fução em que vai dizer quantos alunos ao total tem a escola
