@@ -1,0 +1,19 @@
+def calculadora(num1,num2,op):
+    if(op== '+'):
+        return(num1 + num2)
+    if(op== '-'):
+        return(num1 - num2)
+    if(op== '*'):
+        return(num1 * num2)
+    if(op== '/'):
+        return(num1 / num2)
+    
+print('inicio da execução')
+
+x = int(input('Qual o primeiro numero: '))
+y = int(input('Qual o segundo numero: '))
+op = input('indique a operação: ')
+r = calculadora(x,y,op)
+print('O Resultado é', r)
+
+#Uma Calculadora Em Python
