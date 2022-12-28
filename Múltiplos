@@ -1,0 +1,16 @@
+jonas = int(input("Digite um número: "))
+number=0
+
+for i in range(2,jonas):
+    if (jonas % i == 0):
+        print("Múltiplo de",i)
+
+if(number==0):
+    print("É primo")
+else:
+    print("Tem",number," múltiplos acima de 2 e abaixo de",jonas)
+
+
+
+
+#Esta é uma função em que irá exibir todos os Multiplos daquele número na tela. Casó ele não possua múltiplos, a função automaticamente dirá que ele é um número Primo
