@@ -1,0 +1,9 @@
+import random
+ListAnimais = ['Leeão', 'Zebra', 'Cachorro', 'gato', 'Pássaro', 'Coelho', 'Lagarto','Jacaré','Peixe']
+#Sortear um Animal 
+random.choice(ListAnimais)
+print('✨ Uma Animal foi sorteado ✨')
+print('✨ O Sorteio foi Realizado. O Animal Sorteado Foi: {} ✨'.format(random.choice(ListAnimais)))
+
+
+#Código em que sorteia um dos animais presentes na ListAnimais
